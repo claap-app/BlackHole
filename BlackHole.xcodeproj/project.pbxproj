@@ -314,6 +314,10 @@
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = "Manual";
+				CODE_SIGN_ENTITLEMENTS = "";
+				ENABLE_HARDENED_RUNTIME = NO; // Optional: Adjust based on your needs
 			};
 			name = Release;
 		};
