@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		3D8966462849C318002AB3F0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCADB233FAE0500101681 /* LICENSE */; };
 		3D8966472849C318002AB3F0 /* BlackHole.icns in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCAD9233F235500101681 /* BlackHole.icns */; };
 		3D8966482849C318002AB3F0 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 039FF2572341B6E800400D7A /* CHANGELOG.md */; };
+		57C28F8D2B7E7E0E005A17B4 /* Claap.icns in Resources */ = {isa = PBXBuildFile; fileRef = 57C28F8C2B7E7E0E005A17B4 /* Claap.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		3D89664D2849C318002AB3F0 /* BlackHole.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackHole.driver; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8966882849D45F002AB3F0 /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
 		3D8966892849D45F002AB3F0 /* preinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		57C28F8C2B7E7E0E005A17B4 /* Claap.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Claap.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		2D616EF015B8C82500D598BD /* BlackHole */ = {
 			isa = PBXGroup;
 			children = (
+				57C28F8C2B7E7E0E005A17B4 /* Claap.icns */,
 				3D08380E284A7DE100C69403 /* BlackHole.plist */,
 				03FDCAD9233F235500101681 /* BlackHole.icns */,
 				2D616EF215B8C82500D598BD /* BlackHole.c */,
@@ -194,7 +197,8 @@
 		2D74779D1578162B00412279 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					3D88D48B285BBA5800629399 = {
 						CreatedOnToolsVersion = 13.4;
@@ -230,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C28F8D2B7E7E0E005A17B4 /* Claap.icns in Resources */,
 				3D8966462849C318002AB3F0 /* LICENSE in Resources */,
 				3D8966472849C318002AB3F0 /* BlackHole.icns in Resources */,
 				3D8966482849C318002AB3F0 /* CHANGELOG.md in Resources */,
@@ -436,7 +441,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = Q5C99V536K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -466,7 +470,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Q5C99V536K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -500,7 +503,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Q5C99V536K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -522,14 +524,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = Q5C99V536K;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=0",
 				);
 				INFOPLIST_FILE = BlackHole/BlackHole.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,14 +543,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = Q5C99V536K;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
 				);
 				INFOPLIST_FILE = BlackHole/BlackHole.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,14 +562,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = Q5C99V536K;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
 				);
 				INFOPLIST_FILE = BlackHole/BlackHole.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.BlackHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
