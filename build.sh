@@ -1,6 +1,6 @@
 driverName="ClaapBlackHole"
 bundleID="io.claap.BlackHole"
-executableName="ClaapBlackHole"
+executableName="ClaapBackHole"
 deviceName="Claap"
 icon="Claap.icns"
 channels="2"
